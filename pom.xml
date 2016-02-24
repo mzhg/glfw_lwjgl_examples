@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>glfw.lwjgl</groupId>
+  <artifactId>glfw_lwjgl_examples</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>glfw_lwjgl_examples</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <natives.version>0.0.6</natives.version>
+        <lwjgl.version>2.8.2</lwjgl.version>
+        <slick.version>274</slick.version>
+        <junit.version>4.10</junit.version>
+        <lwjgl.version>3.0.0b</lwjgl.version>
+    </properties>
+ 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.lwjgl</groupId>
+    	<artifactId>lwjgl</artifactId>
+    	<version>${lwjgl.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>commons-cli</groupId>
+    	<artifactId>commons-cli</artifactId>
+    	<version>1.3.1</version>
+    </dependency>
+	
+	<dependency>
+		<groupId>org.lwjgl</groupId>
+		<artifactId>lwjgl-platform</artifactId>
+		<version>${lwjgl.version}</version>
+		<classifier>natives-windows</classifier>
+	</dependency>
+		
+  </dependencies>
+  
+</project>
